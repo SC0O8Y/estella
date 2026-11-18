@@ -411,23 +411,30 @@ addPlugin({
         const width=435*(stageIndex+phase)/STAGES.length;
         if(f.width.value!==width)world.insert(fill,UINode,{...f,width:{unit:0,value:Math.max(5,width)}});
         const shapes=buildVisual(s.visual,phase,elapsed,mode);
+        // MeshRenderer.mesh is an engine mesh handle (number), not a resource
+        // path. Use scene-authored mesh pools and change visibility / pose.
         for(let i=0;i<92;i++){
-          const e=find(world,'Part '+String(i).padStart(3,'0'));
-          const m=world.get(e,MeshRenderer), tr=world.get(e,Transform);
-          if(i>=shapes.length){
-            if(m.enabled)world.insert(e,MeshRenderer,{...m,enabled:false});
-            continue;
-          }
           const sh=shapes[i];
-          world.insert(e,MeshRenderer,{
-            ...m,enabled:true,mesh:'builtin:'+sh.mesh,
-            color:{r:sh.color[0],g:sh.color[1],b:sh.color[2],a:sh.alpha??1}
-          });
-          world.insert(e,Transform,{
-            ...tr,position:{x:sh.p[0],y:sh.p[1],z:sh.p[2]},
-            scale:{x:sh.scale[0],y:sh.scale[1],z:sh.scale[2]},
-            rotation:sh.rotation||{x:0,y:0,z:0,w:1}
-          });
+          for(const kind of ['sphere','cube','cylinder'] as const){
+            const prefix=kind==='sphere'?'Part ':kind==='cube'?'Cube ':'Cylinder ';
+            const e=find(world,prefix+String(i).padStart(3,'0'));
+            const m=world.get(e,MeshRenderer);
+            const active=!!sh&&sh.mesh===kind;
+            if(!active){
+              if(m.enabled)world.insert(e,MeshRenderer,{...m,enabled:false});
+              continue;
+            }
+            const nextColor={r:sh.color[0],g:sh.color[1],b:sh.color[2],a:sh.alpha??1};
+            if(!m.enabled||m.color.r!==nextColor.r||m.color.g!==nextColor.g
+               ||m.color.b!==nextColor.b||m.color.a!==nextColor.a)
+              world.insert(e,MeshRenderer,{...m,enabled:true,color:nextColor});
+            const tr=world.get(e,Transform);
+            world.insert(e,Transform,{
+              ...tr,position:{x:sh.p[0],y:sh.p[1],z:sh.p[2]},
+              scale:{x:sh.scale[0],y:sh.scale[1],z:sh.scale[2]},
+              rotation:sh.rotation||{x:0,y:0,z:0,w:1}
+            });
+          }
         }
         Object.assign(facts,{ready:true,stage:stageIndex+1,title:s.title,chapter:s.chapter,
           total:STAGES.length,mode,phase,running,auto,visibleShapes:shapes.length});
