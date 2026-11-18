@@ -1,0 +1,99 @@
+name: Proteomics Journey - Build and verify Web
+
+on:
+  push:
+    branches:
+      - feature/proteomics-journey-estella-20261118
+    paths:
+      - 'examples/proteomics-journey/**'
+      - '.github/workflows/proteomics-journey-web.yml'
+      - 'tools/tests/proteomics-journey-export.mjs'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: proteomics-journey-web-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-and-smoke:
+    name: Compile / export / render Proteomics Journey
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - name: Check out Estella
+        uses: actions/checkout@v7
+        with:
+          submodules: false
+          fetch-depth: 1
+
+      - name: Install Estella toolchain
+        uses: ./.github/actions/setup
+
+      - name: Build the TypeScript SDK
+        run: pnpm --filter ./sdk build
+
+      - name: Type-check Proteomics Journey
+        run: pnpm exec tsc --noEmit -p examples/proteomics-journey/tsconfig.json
+
+      - name: Validate scene and chapter schema
+        run: node tools/tests/proteomics-journey-export.mjs --check-source
+
+      - name: Initialise engine source dependencies
+        uses: ./.github/actions/engine-submodules
+
+      - name: Install the Emscripten compiler
+        uses: mymindstorm/setup-emsdk@v16
+        with:
+          version: 5.0.0
+          actions-cache-folder: .emsdk-ci
+          cache-key: proteomics-emsdk-5.0.0-${{ runner.os }}
+
+      - name: Compile WebAssembly runtime
+        run: node build-tools/cli.js build -t web --no-sync
+
+      - name: Export packaged web application
+        run: |
+          mkdir -p output
+          node pipeline/bin/estella.mjs export examples/proteomics-journey \
+            --platform web --wasm build/wasm/web \
+            --out output/proteomics-journey-web \
+            --json output/proteomics-export-result.json
+          test -f output/proteomics-journey-web/index.html
+
+      - name: Install headless browser prerequisites
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y xvfb libasound2t64 libgtk-3-0t64 libgbm1
+
+      - name: Verify rendered frame and 21-stage navigation
+        run: node tools/tests/proteomics-journey-export.mjs --check-export output/proteomics-journey-web
+
+      - name: Create distribution archive
+        run: |
+          cd output
+          zip -qr proteomics-journey-web.zip proteomics-journey-web
+
+      - name: Upload playable web application
+        if: success()
+        uses: actions/upload-artifact@v7
+        with:
+          name: proteomics-journey-web
+          path: output/proteomics-journey-web/
+          retention-days: 14
+          if-no-files-found: error
+
+      - name: Upload zip and verification evidence
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: proteomics-journey-build-evidence
+          path: |
+            output/*.json
+            output/*.log
+            output/*.png
+            output/proteomics-journey-web.zip
+          retention-days: 14
+          if-no-files-found: warn
