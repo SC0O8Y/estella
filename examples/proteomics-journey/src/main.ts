@@ -146,7 +146,15 @@ function buildVisual(visual: Visual, p: number, t: number, mode: string): Shape[
       const nx=mix(56,-75,pct<.5?pct*2:1);
       const ny=pct<.5?mix(90,8,pct*2):mix(8,91,(pct-.5)*2);
       tube([nx,ny,0],[nx,ny-57,0],4,CYAN);
-      tube([nx,ny+5,0],[125,ny+5,0],4,STEEL);
+      if(mode==='Trap loading'){
+        tube([nx,ny+5,0],[40,ny+5,0],4,STEEL);
+        tube([40,ny+5,0],[40,-45,0],4,BLUE);
+        push('cylinder',[40,-28,0],[.16,.48,.16],VIOLET);
+        tube([40,-50,0],[140,-50,0],3,CYAN);
+      } else {
+        tube([nx,ny+5,0],[148,ny+5,0],4,CYAN);
+        tube([148,ny+5,0],[148,-48,0],3,STEEL);
+      }
       for(let i=0;i<14;i++){
         const q=clamp((pct-.48)*2.7-i*.02);
         ball(mix(-75,125,q),mix(-6,20+((i%3)-1)*4,q),3,2.2,GREEN);
@@ -214,6 +222,19 @@ function buildVisual(visual: Visual, p: number, t: number, mode: string): Shape[
         }
       }
       if(visual==='ms1'){
+        // Different selectable teaching schematics, not OEM-exact ion paths.
+        if(mode==='Orbitrap Astral'){
+          tube([65,6,0],[65,77,0],2.3,CYAN);
+          ring(65,76,0,19,CYAN,10);
+          tube([65,76,0],[160,76,0],2.1,ORANGE);
+        } else if(mode==='Orbitrap Eclipse'){
+          ring(50,57,0,17,VIOLET,10);
+          tube([50,45,0],[160,76,0],2.3,VIOLET);
+          ring(165,76,0,18,YELLOW,10);
+        } else {
+          ring(98,54,0,23,GREEN,12);
+          tube([25,30,0],[100,53,0],2,GREEN);
+        }
         for(let i=0;i<12;i++){
           const h=12+((i*31)%56);
           block(-103+i*25,-58+h/2,55,.08,h/100,.1,i%2?CYAN:BLUE);
