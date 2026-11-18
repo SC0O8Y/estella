@@ -1,0 +1,25 @@
+{
+  "formatVersion": "1",
+  "name": "Proteomics Journey | MPMP",
+  "description": "A chapter-based scientific 3D teaching experience: sample preparation, mass spectrometry, identification and quantitative proteomics.",
+  "tag": "Education",
+  "version": "0.1.0",
+  "defaultScene": "assets/scenes/main.esscene",
+  "designResolution": {
+    "width": 1600,
+    "height": 900
+  },
+  "spineVersion": "none",
+  "scripts": {
+    "main": "src/main.ts"
+  },
+  "features": {
+    "rendering": {
+      "colorSpace": "linear",
+      "outputTransform": "aces",
+      "quality": {
+        "mode": "high"
+      }
+    }
+  }
+}
