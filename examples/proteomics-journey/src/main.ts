@@ -37,12 +37,12 @@ function buildVisual(visual: Visual, p: number, t: number, mode: string): Shape[
   const push = (mesh: string, pt: Point, scale: Point, color: RGB, rotation?: Shape['rotation']) =>
     out.length < 92 && out.push({mesh, p: pt, scale, color, rotation});
   const ball = (x: number, y: number, z: number, r: number, c: RGB) =>
-    push('sphere', [x,y,z], [r,r,r], c);
+    push('sphere', [x,y,z], [r/50,r/50,r/50], c);
   const block = (x: number, y: number, z: number, sx: number, sy: number, sz: number, c: RGB) =>
     push('cube', [x,y,z], [sx,sy,sz], c);
   const tube = (a: Point,b: Point,r: number,c:RGB) => {
     const pt = lerp(a,b,.5);
-    push('cylinder',pt,[r,Math.hypot(b[0]-a[0],b[1]-a[1],b[2]-a[2])/100,r],c,orientation(a,b));
+    push('cylinder',pt,[r/50,Math.hypot(b[0]-a[0],b[1]-a[1],b[2]-a[2])/100,r/50],c,orientation(a,b));
   };
   const chain = (x: number, y: number, z: number, n: number, c: RGB, spread = 1) => {
     let prev: Point | null = null;
