@@ -1,0 +1,6597 @@
+{
+  "version": 4,
+  "name": "Proteomics Journey",
+  "entities": [
+    {
+      "id": 0,
+      "name": "Studio Stage",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": -98,
+              "z": -110
+            },
+            "scale": {
+              "x": 6,
+              "y": 0.06,
+              "z": 4.4
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:cube",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.035,
+              "g": 0.075,
+              "b": 0.12,
+              "a": 1
+            },
+            "enabled": true
+          }
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Background wall",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": -240
+            },
+            "scale": {
+              "x": 9,
+              "y": 5,
+              "z": 0.18
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:cube",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.016,
+              "g": 0.037,
+              "b": 0.072,
+              "a": 1
+            },
+            "enabled": true
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Accent left",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": -205,
+              "y": -72,
+              "z": -180
+            },
+            "scale": {
+              "x": 0.035,
+              "y": 0.36,
+              "z": 4
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:cube",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.08,
+              "g": 0.46,
+              "b": 0.75,
+              "a": 1
+            },
+            "enabled": true
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Accent right",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 240,
+              "y": -72,
+              "z": -180
+            },
+            "scale": {
+              "x": 0.035,
+              "y": 0.36,
+              "z": 4
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:cube",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.08,
+              "g": 0.46,
+              "b": 0.75,
+              "a": 1
+            },
+            "enabled": true
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Central dias",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 42,
+              "y": -77,
+              "z": -35
+            },
+            "scale": {
+              "x": 4.6,
+              "y": 0.15,
+              "z": 2.4
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:cube",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.065,
+              "g": 0.14,
+              "b": 0.21,
+              "a": 1
+            },
+            "enabled": true
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Camera",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 6,
+              "y": 74,
+              "z": 435
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            },
+            "rotation": {
+              "x": -0.09,
+              "y": 0,
+              "z": 0,
+              "w": 0.996
+            }
+          }
+        },
+        {
+          "type": "Camera",
+          "data": {
+            "projectionType": 0,
+            "fov": 48,
+            "nearPlane": 1,
+            "farPlane": 1800,
+            "isActive": true,
+            "priority": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Key light",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": -100,
+              "y": 180,
+              "z": 140
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "Light",
+          "data": {
+            "type": 1,
+            "intensity": 1.2,
+            "enabled": true,
+            "color": {
+              "r": 0.67,
+              "g": 0.84,
+              "b": 1,
+              "a": 1
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Fill light",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 200,
+              "y": 50,
+              "z": -80
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "Light",
+          "data": {
+            "type": 2,
+            "intensity": 0.58,
+            "enabled": true,
+            "color": {
+              "r": 0.26,
+              "g": 0.6,
+              "b": 1,
+              "a": 1
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Part 000",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Part 001",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Part 002",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Part 003",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Part 004",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Part 005",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Part 006",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Part 007",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Part 008",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Part 009",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Part 010",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Part 011",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Part 012",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Part 013",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Part 014",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Part 015",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Part 016",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "name": "Part 017",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Part 018",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "name": "Part 019",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "name": "Part 020",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "name": "Part 021",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "name": "Part 022",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "name": "Part 023",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "name": "Part 024",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "name": "Part 025",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "name": "Part 026",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "name": "Part 027",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "name": "Part 028",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "name": "Part 029",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "name": "Part 030",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "name": "Part 031",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "name": "Part 032",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "name": "Part 033",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "name": "Part 034",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "name": "Part 035",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "name": "Part 036",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "name": "Part 037",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "name": "Part 038",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "name": "Part 039",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "name": "Part 040",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "name": "Part 041",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "name": "Part 042",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "name": "Part 043",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "name": "Part 044",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "name": "Part 045",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "name": "Part 046",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "name": "Part 047",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "name": "Part 048",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "name": "Part 049",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "name": "Part 050",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "name": "Part 051",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "name": "Part 052",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 61,
+      "name": "Part 053",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "name": "Part 054",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 63,
+      "name": "Part 055",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 64,
+      "name": "Part 056",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "name": "Part 057",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 66,
+      "name": "Part 058",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 67,
+      "name": "Part 059",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 68,
+      "name": "Part 060",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 69,
+      "name": "Part 061",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 70,
+      "name": "Part 062",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 71,
+      "name": "Part 063",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 72,
+      "name": "Part 064",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 73,
+      "name": "Part 065",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 74,
+      "name": "Part 066",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 75,
+      "name": "Part 067",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 76,
+      "name": "Part 068",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 77,
+      "name": "Part 069",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 78,
+      "name": "Part 070",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 79,
+      "name": "Part 071",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 80,
+      "name": "Part 072",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 81,
+      "name": "Part 073",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 82,
+      "name": "Part 074",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 83,
+      "name": "Part 075",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 84,
+      "name": "Part 076",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 85,
+      "name": "Part 077",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 86,
+      "name": "Part 078",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 87,
+      "name": "Part 079",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 88,
+      "name": "Part 080",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 89,
+      "name": "Part 081",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 90,
+      "name": "Part 082",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 91,
+      "name": "Part 083",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 92,
+      "name": "Part 084",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 93,
+      "name": "Part 085",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 94,
+      "name": "Part 086",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 95,
+      "name": "Part 087",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 96,
+      "name": "Part 088",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 97,
+      "name": "Part 089",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 98,
+      "name": "Part 090",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 99,
+      "name": "Part 091",
+      "parent": null,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "mesh": "builtin:sphere",
+            "lit": true,
+            "opaque": true,
+            "cullBackfaces": false,
+            "color": {
+              "r": 0.1,
+              "g": 0.7,
+              "b": 1,
+              "a": 1
+            },
+            "enabled": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 100,
+      "name": "Canvas",
+      "parent": null,
+      "children": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137
+      ],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "Canvas",
+          "data": {
+            "designResolution": {
+              "x": 1600,
+              "y": 900
+            },
+            "scaleMode": 2,
+            "backgroundColor": {
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "a": 0
+            }
+          }
+        },
+        {
+          "type": "UINode",
+          "data": {}
+        }
+      ]
+    },
+    {
+      "id": 101,
+      "name": "Top Bar",
+      "parent": 100,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "UINode",
+          "data": {
+            "position": 1,
+            "insetLeft": {
+              "unit": 0,
+              "value": 0
+            },
+            "insetTop": {
+              "unit": 0,
+              "value": 0
+            },
+            "width": {
+              "unit": 0,
+              "value": 1600
+            },
+            "height": {
+              "unit": 0,
+              "value": 102
+            }
+          }
+        },
+        {
+          "type": "UIVisual",
+          "data": {
+            "visualType": 1,
+            "color": {
+              "r": 0.019,
+              "g": 0.041,
+              "b": 0.078,
+              "a": 0.96
+            },
+            "enabled": true
+          }
+        }
+      ]
+    },
+    {
+      "id": 102,
+      "name": "Eyebrow",
+      "parent": 100,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "UINode",
+          "data": {
+            "position": 1,
+            "insetLeft": {
+              "unit": 0,
+              "value": 38
+            },
+            "insetTop": {
+              "unit": 0,
+              "value": 14
+            },
+            "width": {
+              "unit": 0,
+              "value": 600
+            },
+            "height": {
+              "unit": 0,
+              "value": 23
+            }
+          }
+        },
+        {
+          "type": "Text",
+          "data": {
+            "content": "MONASH PROTEOMICS  /  INTERACTIVE SCIENTIFIC JOURNEY",
+            "fontSize": 16,
+            "fontFamily": "Arial, sans-serif",
+            "color": {
+              "r": 0.38,
+              "g": 0.85,
+              "b": 0.96,
+              "a": 1
+            },
+            "bold": true,
+            "align": 0,
+            "verticalAlign": 1,
+            "wordWrap": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 103,
+      "name": "Top Title",
+      "parent": 100,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "UINode",
+          "data": {
+            "position": 1,
+            "insetLeft": {
+              "unit": 0,
+              "value": 36
+            },
+            "insetTop": {
+              "unit": 0,
+              "value": 42
+            },
+            "width": {
+              "unit": 0,
+              "value": 730
+            },
+            "height": {
+              "unit": 0,
+              "value": 44
+            }
+          }
+        },
+        {
+          "type": "Text",
+          "data": {
+            "content": "FROM SAMPLE TO BIOLOGICAL INSIGHT",
+            "fontSize": 28,
+            "fontFamily": "Arial, sans-serif",
+            "color": {
+              "r": 0.86,
+              "g": 0.94,
+              "b": 1,
+              "a": 1
+            },
+            "bold": true,
+            "align": 0,
+            "verticalAlign": 1,
+            "wordWrap": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 104,
+      "name": "Chapter 0",
+      "parent": 100,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "UINode",
+          "data": {
+            "position": 1,
+            "insetLeft": {
+              "unit": 0,
+              "value": 790
+            },
+            "insetTop": {
+              "unit": 0,
+              "value": 25
+            },
+            "width": {
+              "unit": 0,
+              "value": 183
+            },
+            "height": {
+              "unit": 0,
+              "value": 53
+            }
+          }
+        },
+        {
+          "type": "UIVisual",
+          "data": {
+            "visualType": 1,
+            "color": {
+              "r": 0.068,
+              "g": 0.12,
+              "b": 0.17,
+              "a": 1
+            },
+            "enabled": true
+          }
+        },
+        {
+          "type": "Text",
+          "data": {
+            "content": "01  PREPARATION",
+            "fontSize": 15,
+            "fontFamily": "Arial, sans-serif",
+            "color": {
+              "r": 0.86,
+              "g": 0.94,
+              "b": 1,
+              "a": 1
+            },
+            "bold": true,
+            "align": 1,
+            "verticalAlign": 1,
+            "wordWrap": false
+          }
+        },
+        {
+          "type": "Interactable",
+          "data": {
+            "enabled": true,
+            "raycastTarget": true,
+            "blockRaycast": true
+          }
+        }
+      ]
+    },
+    {
+      "id": 105,
+      "name": "Chapter 1",
+      "parent": 100,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "UINode",
+          "data": {
+            "position": 1,
+            "insetLeft": {
+              "unit": 0,
+              "value": 982
+            },
+            "insetTop": {
+              "unit": 0,
+              "value": 25
+            },
+            "width": {
+              "unit": 0,
+              "value": 183
+            },
+            "height": {
+              "unit": 0,
+              "value": 53
+            }
+          }
+        },
+        {
+          "type": "UIVisual",
+          "data": {
+            "visualType": 1,
+            "color": {
+              "r": 0.068,
+              "g": 0.12,
+              "b": 0.17,
+              "a": 1
+            },
+            "enabled": true
+          }
+        },
+        {
+          "type": "Text",
+          "data": {
+            "content": "02  ACQUISITION",
+            "fontSize": 15,
+            "fontFamily": "Arial, sans-serif",
+            "color": {
+              "r": 0.86,
+              "g": 0.94,
+              "b": 1,
+              "a": 1
+            },
+            "bold": true,
+            "align": 1,
+            "verticalAlign": 1,
+            "wordWrap": false
+          }
+        },
+        {
+          "type": "Interactable",
+          "data": {
+            "enabled": true,
+            "raycastTarget": true,
+            "blockRaycast": true
+          }
+        }
+      ]
+    },
+    {
+      "id": 106,
+      "name": "Chapter 2",
+      "parent": 100,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "UINode",
+          "data": {
+            "position": 1,
+            "insetLeft": {
+              "unit": 0,
+              "value": 1174
+            },
+            "insetTop": {
+              "unit": 0,
+              "value": 25
+            },
+            "width": {
+              "unit": 0,
+              "value": 183
+            },
+            "height": {
+              "unit": 0,
+              "value": 53
+            }
+          }
+        },
+        {
+          "type": "UIVisual",
+          "data": {
+            "visualType": 1,
+            "color": {
+              "r": 0.068,
+              "g": 0.12,
+              "b": 0.17,
+              "a": 1
+            },
+            "enabled": true
+          }
+        },
+        {
+          "type": "Text",
+          "data": {
+            "content": "03  IDENTIFICATION",
+            "fontSize": 15,
+            "fontFamily": "Arial, sans-serif",
+            "color": {
+              "r": 0.86,
+              "g": 0.94,
+              "b": 1,
+              "a": 1
+            },
+            "bold": true,
+            "align": 1,
+            "verticalAlign": 1,
+            "wordWrap": false
+          }
+        },
+        {
+          "type": "Interactable",
+          "data": {
+            "enabled": true,
+            "raycastTarget": true,
+            "blockRaycast": true
+          }
+        }
+      ]
+    },
+    {
+      "id": 107,
+      "name": "Chapter 3",
+      "parent": 100,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "UINode",
+          "data": {
+            "position": 1,
+            "insetLeft": {
+              "unit": 0,
+              "value": 1366
+            },
+            "insetTop": {
+              "unit": 0,
+              "value": 25
+            },
+            "width": {
+              "unit": 0,
+              "value": 183
+            },
+            "height": {
+              "unit": 0,
+              "value": 53
+            }
+          }
+        },
+        {
+          "type": "UIVisual",
+          "data": {
+            "visualType": 1,
+            "color": {
+              "r": 0.068,
+              "g": 0.12,
+              "b": 0.17,
+              "a": 1
+            },
+            "enabled": true
+          }
+        },
+        {
+          "type": "Text",
+          "data": {
+            "content": "04  QUANTITATION",
+            "fontSize": 15,
+            "fontFamily": "Arial, sans-serif",
+            "color": {
+              "r": 0.86,
+              "g": 0.94,
+              "b": 1,
+              "a": 1
+            },
+            "bold": true,
+            "align": 1,
+            "verticalAlign": 1,
+            "wordWrap": false
+          }
+        },
+        {
+          "type": "Interactable",
+          "data": {
+            "enabled": true,
+            "raycastTarget": true,
+            "blockRaycast": true
+          }
+        }
+      ]
+    },
+    {
+      "id": 108,
+      "name": "Left Plate",
+      "parent": 100,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "UINode",
+          "data": {
+            "position": 1,
+            "insetLeft": {
+              "unit": 0,
+              "value": 24
+            },
+            "insetTop": {
+              "unit": 0,
+              "value": 124
+            },
+            "width": {
+              "unit": 0,
+              "value": 422
+            },
+            "height": {
+              "unit": 0,
+              "value": 628
+            }
+          }
+        },
+        {
+          "type": "UIVisual",
+          "data": {
+            "visualType": 1,
+            "color": {
+              "r": 0.024,
+              "g": 0.056,
+              "b": 0.102,
+              "a": 0.94
+            },
+            "enabled": true
+          }
+        }
+      ]
+    },
+    {
+      "id": 109,
+      "name": "Stage Number",
+      "parent": 100,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "UINode",
+          "data": {
+            "position": 1,
+            "insetLeft": {
+              "unit": 0,
+              "value": 48
+            },
+            "insetTop": {
+              "unit": 0,
+              "value": 144
+            },
+            "width": {
+              "unit": 0,
+              "value": 360
+            },
+            "height": {
+              "unit": 0,
+              "value": 22
+            }
+          }
+        },
+        {
+          "type": "Text",
+          "data": {
+            "content": "01  /  21",
+            "fontSize": 16,
+            "fontFamily": "Arial, sans-serif",
+            "color": {
+              "r": 0.4,
+              "g": 0.88,
+              "b": 1,
+              "a": 1
+            },
+            "bold": true,
+            "align": 0,
+            "verticalAlign": 1,
+            "wordWrap": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 110,
+      "name": "Stage Strap",
+      "parent": 100,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "UINode",
+          "data": {
+            "position": 1,
+            "insetLeft": {
+              "unit": 0,
+              "value": 48
+            },
+            "insetTop": {
+              "unit": 0,
+              "value": 186
+            },
+            "width": {
+              "unit": 0,
+              "value": 360
+            },
+            "height": {
+              "unit": 0,
+              "value": 23
+            }
+          }
+        },
+        {
+          "type": "Text",
+          "data": {
+            "content": "",
+            "fontSize": 15,
+            "fontFamily": "Arial, sans-serif",
+            "color": {
+              "r": 0.45,
+              "g": 0.85,
+              "b": 0.86,
+              "a": 1
+            },
+            "bold": true,
+            "align": 0,
+            "verticalAlign": 1,
+            "wordWrap": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 111,
+      "name": "Stage Title",
+      "parent": 100,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "UINode",
+          "data": {
+            "position": 1,
+            "insetLeft": {
+              "unit": 0,
+              "value": 48
+            },
+            "insetTop": {
+              "unit": 0,
+              "value": 221
+            },
+            "width": {
+              "unit": 0,
+              "value": 368
+            },
+            "height": {
+              "unit": 0,
+              "value": 95
+            }
+          }
+        },
+        {
+          "type": "Text",
+          "data": {
+            "content": "",
+            "fontSize": 33,
+            "fontFamily": "Arial, sans-serif",
+            "color": {
+              "r": 0.86,
+              "g": 0.94,
+              "b": 1,
+              "a": 1
+            },
+            "bold": true,
+            "align": 0,
+            "verticalAlign": 1,
+            "wordWrap": true
+          }
+        }
+      ]
+    },
+    {
+      "id": 112,
+      "name": "Divider A",
+      "parent": 100,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "UINode",
+          "data": {
+            "position": 1,
+            "insetLeft": {
+              "unit": 0,
+              "value": 48
+            },
+            "insetTop": {
+              "unit": 0,
+              "value": 330
+            },
+            "width": {
+              "unit": 0,
+              "value": 372
+            },
+            "height": {
+              "unit": 0,
+              "value": 2
+            }
+          }
+        },
+        {
+          "type": "UIVisual",
+          "data": {
+            "visualType": 1,
+            "color": {
+              "r": 0.18,
+              "g": 0.34,
+              "b": 0.44,
+              "a": 1
+            },
+            "enabled": true
+          }
+        }
+      ]
+    },
+    {
+      "id": 113,
+      "name": "Concept Header",
+      "parent": 100,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "UINode",
+          "data": {
+            "position": 1,
+            "insetLeft": {
+              "unit": 0,
+              "value": 48
+            },
+            "insetTop": {
+              "unit": 0,
+              "value": 350
+            },
+            "width": {
+              "unit": 0,
+              "value": 340
+            },
+            "height": {
+              "unit": 0,
+              "value": 27
+            }
+          }
+        },
+        {
+          "type": "Text",
+          "data": {
+            "content": "WHAT IS HAPPENING",
+            "fontSize": 16,
+            "fontFamily": "Arial, sans-serif",
+            "color": {
+              "r": 0.4,
+              "g": 0.85,
+              "b": 0.98,
+              "a": 1
+            },
+            "bold": true,
+            "align": 0,
+            "verticalAlign": 1,
+            "wordWrap": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 114,
+      "name": "Concept",
+      "parent": 100,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "UINode",
+          "data": {
+            "position": 1,
+            "insetLeft": {
+              "unit": 0,
+              "value": 48
+            },
+            "insetTop": {
+              "unit": 0,
+              "value": 389
+            },
+            "width": {
+              "unit": 0,
+              "value": 361
+            },
+            "height": {
+              "unit": 0,
+              "value": 122
+            }
+          }
+        },
+        {
+          "type": "Text",
+          "data": {
+            "content": "",
+            "fontSize": 20,
+            "fontFamily": "Arial, sans-serif",
+            "color": {
+              "r": 0.9,
+              "g": 0.95,
+              "b": 0.99,
+              "a": 1
+            },
+            "bold": false,
+            "align": 0,
+            "verticalAlign": 1,
+            "wordWrap": true
+          }
+        }
+      ]
+    },
+    {
+      "id": 115,
+      "name": "Observe Header",
+      "parent": 100,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "UINode",
+          "data": {
+            "position": 1,
+            "insetLeft": {
+              "unit": 0,
+              "value": 48
+            },
+            "insetTop": {
+              "unit": 0,
+              "value": 529
+            },
+            "width": {
+              "unit": 0,
+              "value": 348
+            },
+            "height": {
+              "unit": 0,
+              "value": 27
+            }
+          }
+        },
+        {
+          "type": "Text",
+          "data": {
+            "content": "WHAT TO WATCH",
+            "fontSize": 16,
+            "fontFamily": "Arial, sans-serif",
+            "color": {
+              "r": 0.4,
+              "g": 0.85,
+              "b": 0.98,
+              "a": 1
+            },
+            "bold": true,
+            "align": 0,
+            "verticalAlign": 1,
+            "wordWrap": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 116,
+      "name": "Observation",
+      "parent": 100,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "UINode",
+          "data": {
+            "position": 1,
+            "insetLeft": {
+              "unit": 0,
+              "value": 48
+            },
+            "insetTop": {
+              "unit": 0,
+              "value": 566
+            },
+            "width": {
+              "unit": 0,
+              "value": 358
+            },
+            "height": {
+              "unit": 0,
+              "value": 92
+            }
+          }
+        },
+        {
+          "type": "Text",
+          "data": {
+            "content": "",
+            "fontSize": 18,
+            "fontFamily": "Arial, sans-serif",
+            "color": {
+              "r": 0.86,
+              "g": 0.94,
+              "b": 1,
+              "a": 1
+            },
+            "bold": false,
+            "align": 0,
+            "verticalAlign": 1,
+            "wordWrap": true
+          }
+        }
+      ]
+    },
+    {
+      "id": 117,
+      "name": "Caution Header",
+      "parent": 100,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "UINode",
+          "data": {
+            "position": 1,
+            "insetLeft": {
+              "unit": 0,
+              "value": 48
+            },
+            "insetTop": {
+              "unit": 0,
+              "value": 660
+            },
+            "width": {
+              "unit": 0,
+              "value": 354
+            },
+            "height": {
+              "unit": 0,
+              "value": 24
+            }
+          }
+        },
+        {
+          "type": "Text",
+          "data": {
+            "content": "IMPORTANT DISTINCTION",
+            "fontSize": 14,
+            "fontFamily": "Arial, sans-serif",
+            "color": {
+              "r": 1,
+              "g": 0.75,
+              "b": 0.43,
+              "a": 1
+            },
+            "bold": true,
+            "align": 0,
+            "verticalAlign": 1,
+            "wordWrap": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 118,
+      "name": "Caution",
+      "parent": 100,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "UINode",
+          "data": {
+            "position": 1,
+            "insetLeft": {
+              "unit": 0,
+              "value": 48
+            },
+            "insetTop": {
+              "unit": 0,
+              "value": 692
+            },
+            "width": {
+              "unit": 0,
+              "value": 366
+            },
+            "height": {
+              "unit": 0,
+              "value": 52
+            }
+          }
+        },
+        {
+          "type": "Text",
+          "data": {
+            "content": "",
+            "fontSize": 15,
+            "fontFamily": "Arial, sans-serif",
+            "color": {
+              "r": 1,
+              "g": 0.86,
+              "b": 0.71,
+              "a": 1
+            },
+            "bold": false,
+            "align": 0,
+            "verticalAlign": 1,
+            "wordWrap": true
+          }
+        }
+      ]
+    },
+    {
+      "id": 119,
+      "name": "Scene Tag",
+      "parent": 100,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "UINode",
+          "data": {
+            "position": 1,
+            "insetLeft": {
+              "unit": 0,
+              "value": 484
+            },
+            "insetTop": {
+              "unit": 0,
+              "value": 132
+            },
+            "width": {
+              "unit": 0,
+              "value": 800
+            },
+            "height": {
+              "unit": 0,
+              "value": 26
+            }
+          }
+        },
+        {
+          "type": "Text",
+          "data": {
+            "content": "LIVE 3D SCIENTIFIC VISUALISATION",
+            "fontSize": 16,
+            "fontFamily": "Arial, sans-serif",
+            "color": {
+              "r": 0.41,
+              "g": 0.85,
+              "b": 1,
+              "a": 1
+            },
+            "bold": true,
+            "align": 0,
+            "verticalAlign": 1,
+            "wordWrap": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 120,
+      "name": "Stage Caption",
+      "parent": 100,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "UINode",
+          "data": {
+            "position": 1,
+            "insetLeft": {
+              "unit": 0,
+              "value": 485
+            },
+            "insetTop": {
+              "unit": 0,
+              "value": 164
+            },
+            "width": {
+              "unit": 0,
+              "value": 1016
+            },
+            "height": {
+              "unit": 0,
+              "value": 38
+            }
+          }
+        },
+        {
+          "type": "Text",
+          "data": {
+            "content": "",
+            "fontSize": 22,
+            "fontFamily": "Arial, sans-serif",
+            "color": {
+              "r": 0.86,
+              "g": 0.94,
+              "b": 1,
+              "a": 1
+            },
+            "bold": true,
+            "align": 0,
+            "verticalAlign": 1,
+            "wordWrap": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 121,
+      "name": "Mode Title",
+      "parent": 100,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "UINode",
+          "data": {
+            "position": 1,
+            "insetLeft": {
+              "unit": 0,
+              "value": 1250
+            },
+            "insetTop": {
+              "unit": 0,
+              "value": 144
+            },
+            "width": {
+              "unit": 0,
+              "value": 285
+            },
+            "height": {
+              "unit": 0,
+              "value": 20
+            }
+          }
+        },
+        {
+          "type": "Text",
+          "data": {
+            "content": "ACTIVE WORKFLOW",
+            "fontSize": 15,
+            "fontFamily": "Arial, sans-serif",
+            "color": {
+              "r": 0.43,
+              "g": 0.73,
+              "b": 0.82,
+              "a": 1
+            },
+            "bold": true,
+            "align": 1,
+            "verticalAlign": 1,
+            "wordWrap": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 122,
+      "name": "Mode",
+      "parent": 100,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "UINode",
+          "data": {
+            "position": 1,
+            "insetLeft": {
+              "unit": 0,
+              "value": 1230
+            },
+            "insetTop": {
+              "unit": 0,
+              "value": 179
+            },
+            "width": {
+              "unit": 0,
+              "value": 320
+            },
+            "height": {
+              "unit": 0,
+              "value": 43
+            }
+          }
+        },
+        {
+          "type": "UIVisual",
+          "data": {
+            "visualType": 1,
+            "color": {
+              "r": 0.065,
+              "g": 0.15,
+              "b": 0.23,
+              "a": 0.93
+            },
+            "enabled": true
+          }
+        },
+        {
+          "type": "Text",
+          "data": {
+            "content": "DEFAULT",
+            "fontSize": 18,
+            "fontFamily": "Arial, sans-serif",
+            "color": {
+              "r": 0.86,
+              "g": 0.94,
+              "b": 1,
+              "a": 1
+            },
+            "bold": true,
+            "align": 1,
+            "verticalAlign": 1,
+            "wordWrap": false
+          }
+        },
+        {
+          "type": "Interactable",
+          "data": {
+            "enabled": true,
+            "raycastTarget": true,
+            "blockRaycast": true
+          }
+        }
+      ]
+    },
+    {
+      "id": 123,
+      "name": "Signal Legend",
+      "parent": 100,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "UINode",
+          "data": {
+            "position": 1,
+            "insetLeft": {
+              "unit": 0,
+              "value": 485
+            },
+            "insetTop": {
+              "unit": 0,
+              "value": 707
+            },
+            "width": {
+              "unit": 0,
+              "value": 1050
+            },
+            "height": {
+              "unit": 0,
+              "value": 30
+            }
+          }
+        },
+        {
+          "type": "Text",
+          "data": {
+            "content": "SCHEMATIC • NOT TO SCALE",
+            "fontSize": 14,
+            "fontFamily": "Arial, sans-serif",
+            "color": {
+              "r": 0.48,
+              "g": 0.7,
+              "b": 0.8,
+              "a": 1
+            },
+            "bold": false,
+            "align": 0,
+            "verticalAlign": 1,
+            "wordWrap": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 124,
+      "name": "Pill 0",
+      "parent": 100,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "UINode",
+          "data": {
+            "position": 1,
+            "insetLeft": {
+              "unit": 0,
+              "value": 484
+            },
+            "insetTop": {
+              "unit": 0,
+              "value": 752
+            },
+            "width": {
+              "unit": 0,
+              "value": 324
+            },
+            "height": {
+              "unit": 0,
+              "value": 52
+            }
+          }
+        },
+        {
+          "type": "UIVisual",
+          "data": {
+            "visualType": 1,
+            "color": {
+              "r": 0.055,
+              "g": 0.12,
+              "b": 0.18,
+              "a": 0.93
+            },
+            "enabled": true
+          }
+        }
+      ]
+    },
+    {
+      "id": 125,
+      "name": "Pill Label 0",
+      "parent": 100,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "UINode",
+          "data": {
+            "position": 1,
+            "insetLeft": {
+              "unit": 0,
+              "value": 501
+            },
+            "insetTop": {
+              "unit": 0,
+              "value": 762
+            },
+            "width": {
+              "unit": 0,
+              "value": 294
+            },
+            "height": {
+              "unit": 0,
+              "value": 34
+            }
+          }
+        },
+        {
+          "type": "Text",
+          "data": {
+            "content": "",
+            "fontSize": 18,
+            "fontFamily": "Arial, sans-serif",
+            "color": {
+              "r": 0.82,
+              "g": 0.94,
+              "b": 0.99,
+              "a": 1
+            },
+            "bold": true,
+            "align": 1,
+            "verticalAlign": 1,
+            "wordWrap": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 126,
+      "name": "Pill 1",
+      "parent": 100,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "UINode",
+          "data": {
+            "position": 1,
+            "insetLeft": {
+              "unit": 0,
+              "value": 830
+            },
+            "insetTop": {
+              "unit": 0,
+              "value": 752
+            },
+            "width": {
+              "unit": 0,
+              "value": 324
+            },
+            "height": {
+              "unit": 0,
+              "value": 52
+            }
+          }
+        },
+        {
+          "type": "UIVisual",
+          "data": {
+            "visualType": 1,
+            "color": {
+              "r": 0.055,
+              "g": 0.12,
+              "b": 0.18,
+              "a": 0.93
+            },
+            "enabled": true
+          }
+        }
+      ]
+    },
+    {
+      "id": 127,
+      "name": "Pill Label 1",
+      "parent": 100,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "UINode",
+          "data": {
+            "position": 1,
+            "insetLeft": {
+              "unit": 0,
+              "value": 847
+            },
+            "insetTop": {
+              "unit": 0,
+              "value": 762
+            },
+            "width": {
+              "unit": 0,
+              "value": 294
+            },
+            "height": {
+              "unit": 0,
+              "value": 34
+            }
+          }
+        },
+        {
+          "type": "Text",
+          "data": {
+            "content": "",
+            "fontSize": 18,
+            "fontFamily": "Arial, sans-serif",
+            "color": {
+              "r": 0.82,
+              "g": 0.94,
+              "b": 0.99,
+              "a": 1
+            },
+            "bold": true,
+            "align": 1,
+            "verticalAlign": 1,
+            "wordWrap": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 128,
+      "name": "Pill 2",
+      "parent": 100,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "UINode",
+          "data": {
+            "position": 1,
+            "insetLeft": {
+              "unit": 0,
+              "value": 1176
+            },
+            "insetTop": {
+              "unit": 0,
+              "value": 752
+            },
+            "width": {
+              "unit": 0,
+              "value": 324
+            },
+            "height": {
+              "unit": 0,
+              "value": 52
+            }
+          }
+        },
+        {
+          "type": "UIVisual",
+          "data": {
+            "visualType": 1,
+            "color": {
+              "r": 0.055,
+              "g": 0.12,
+              "b": 0.18,
+              "a": 0.93
+            },
+            "enabled": true
+          }
+        }
+      ]
+    },
+    {
+      "id": 129,
+      "name": "Pill Label 2",
+      "parent": 100,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "UINode",
+          "data": {
+            "position": 1,
+            "insetLeft": {
+              "unit": 0,
+              "value": 1193
+            },
+            "insetTop": {
+              "unit": 0,
+              "value": 762
+            },
+            "width": {
+              "unit": 0,
+              "value": 294
+            },
+            "height": {
+              "unit": 0,
+              "value": 34
+            }
+          }
+        },
+        {
+          "type": "Text",
+          "data": {
+            "content": "",
+            "fontSize": 18,
+            "fontFamily": "Arial, sans-serif",
+            "color": {
+              "r": 0.82,
+              "g": 0.94,
+              "b": 0.99,
+              "a": 1
+            },
+            "bold": true,
+            "align": 1,
+            "verticalAlign": 1,
+            "wordWrap": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 130,
+      "name": "Bottom Bar",
+      "parent": 100,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "UINode",
+          "data": {
+            "position": 1,
+            "insetLeft": {
+              "unit": 0,
+              "value": 0
+            },
+            "insetTop": {
+              "unit": 0,
+              "value": 826
+            },
+            "width": {
+              "unit": 0,
+              "value": 1600
+            },
+            "height": {
+              "unit": 0,
+              "value": 74
+            }
+          }
+        },
+        {
+          "type": "UIVisual",
+          "data": {
+            "visualType": 1,
+            "color": {
+              "r": 0.014,
+              "g": 0.031,
+              "b": 0.057,
+              "a": 0.98
+            },
+            "enabled": true
+          }
+        }
+      ]
+    },
+    {
+      "id": 131,
+      "name": "Prev",
+      "parent": 100,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "UINode",
+          "data": {
+            "position": 1,
+            "insetLeft": {
+              "unit": 0,
+              "value": 26
+            },
+            "insetTop": {
+              "unit": 0,
+              "value": 838
+            },
+            "width": {
+              "unit": 0,
+              "value": 150
+            },
+            "height": {
+              "unit": 0,
+              "value": 49
+            }
+          }
+        },
+        {
+          "type": "UIVisual",
+          "data": {
+            "visualType": 1,
+            "color": {
+              "r": 0.1,
+              "g": 0.16,
+              "b": 0.24,
+              "a": 1
+            },
+            "enabled": true
+          }
+        },
+        {
+          "type": "Text",
+          "data": {
+            "content": "← PREVIOUS",
+            "fontSize": 17,
+            "fontFamily": "Arial, sans-serif",
+            "color": {
+              "r": 0.86,
+              "g": 0.94,
+              "b": 1,
+              "a": 1
+            },
+            "bold": true,
+            "align": 1,
+            "verticalAlign": 1,
+            "wordWrap": false
+          }
+        },
+        {
+          "type": "Interactable",
+          "data": {
+            "enabled": true,
+            "raycastTarget": true,
+            "blockRaycast": true
+          }
+        }
+      ]
+    },
+    {
+      "id": 132,
+      "name": "Next",
+      "parent": 100,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "UINode",
+          "data": {
+            "position": 1,
+            "insetLeft": {
+              "unit": 0,
+              "value": 190
+            },
+            "insetTop": {
+              "unit": 0,
+              "value": 838
+            },
+            "width": {
+              "unit": 0,
+              "value": 150
+            },
+            "height": {
+              "unit": 0,
+              "value": 49
+            }
+          }
+        },
+        {
+          "type": "UIVisual",
+          "data": {
+            "visualType": 1,
+            "color": {
+              "r": 0.1,
+              "g": 0.16,
+              "b": 0.24,
+              "a": 1
+            },
+            "enabled": true
+          }
+        },
+        {
+          "type": "Text",
+          "data": {
+            "content": "NEXT →",
+            "fontSize": 17,
+            "fontFamily": "Arial, sans-serif",
+            "color": {
+              "r": 0.86,
+              "g": 0.94,
+              "b": 1,
+              "a": 1
+            },
+            "bold": true,
+            "align": 1,
+            "verticalAlign": 1,
+            "wordWrap": false
+          }
+        },
+        {
+          "type": "Interactable",
+          "data": {
+            "enabled": true,
+            "raycastTarget": true,
+            "blockRaycast": true
+          }
+        }
+      ]
+    },
+    {
+      "id": 133,
+      "name": "Action",
+      "parent": 100,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "UINode",
+          "data": {
+            "position": 1,
+            "insetLeft": {
+              "unit": 0,
+              "value": 361
+            },
+            "insetTop": {
+              "unit": 0,
+              "value": 838
+            },
+            "width": {
+              "unit": 0,
+              "value": 300
+            },
+            "height": {
+              "unit": 0,
+              "value": 49
+            }
+          }
+        },
+        {
+          "type": "UIVisual",
+          "data": {
+            "visualType": 1,
+            "color": {
+              "r": 0.07,
+              "g": 0.49,
+              "b": 0.6,
+              "a": 1
+            },
+            "enabled": true
+          }
+        },
+        {
+          "type": "Text",
+          "data": {
+            "content": "RUN THIS STEP",
+            "fontSize": 18,
+            "fontFamily": "Arial, sans-serif",
+            "color": {
+              "r": 0.86,
+              "g": 0.94,
+              "b": 1,
+              "a": 1
+            },
+            "bold": true,
+            "align": 1,
+            "verticalAlign": 1,
+            "wordWrap": false
+          }
+        },
+        {
+          "type": "Interactable",
+          "data": {
+            "enabled": true,
+            "raycastTarget": true,
+            "blockRaycast": true
+          }
+        }
+      ]
+    },
+    {
+      "id": 134,
+      "name": "Auto",
+      "parent": 100,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "UINode",
+          "data": {
+            "position": 1,
+            "insetLeft": {
+              "unit": 0,
+              "value": 675
+            },
+            "insetTop": {
+              "unit": 0,
+              "value": 838
+            },
+            "width": {
+              "unit": 0,
+              "value": 196
+            },
+            "height": {
+              "unit": 0,
+              "value": 49
+            }
+          }
+        },
+        {
+          "type": "UIVisual",
+          "data": {
+            "visualType": 1,
+            "color": {
+              "r": 0.09,
+              "g": 0.22,
+              "b": 0.31,
+              "a": 1
+            },
+            "enabled": true
+          }
+        },
+        {
+          "type": "Text",
+          "data": {
+            "content": "AUTO  OFF",
+            "fontSize": 17,
+            "fontFamily": "Arial, sans-serif",
+            "color": {
+              "r": 0.86,
+              "g": 0.94,
+              "b": 1,
+              "a": 1
+            },
+            "bold": true,
+            "align": 1,
+            "verticalAlign": 1,
+            "wordWrap": false
+          }
+        },
+        {
+          "type": "Interactable",
+          "data": {
+            "enabled": true,
+            "raycastTarget": true,
+            "blockRaycast": true
+          }
+        }
+      ]
+    },
+    {
+      "id": 135,
+      "name": "Progress Base",
+      "parent": 100,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "UINode",
+          "data": {
+            "position": 1,
+            "insetLeft": {
+              "unit": 0,
+              "value": 904
+            },
+            "insetTop": {
+              "unit": 0,
+              "value": 861
+            },
+            "width": {
+              "unit": 0,
+              "value": 435
+            },
+            "height": {
+              "unit": 0,
+              "value": 9
+            }
+          }
+        },
+        {
+          "type": "UIVisual",
+          "data": {
+            "visualType": 1,
+            "color": {
+              "r": 0.1,
+              "g": 0.19,
+              "b": 0.27,
+              "a": 1
+            },
+            "enabled": true
+          }
+        }
+      ]
+    },
+    {
+      "id": 136,
+      "name": "Progress Fill",
+      "parent": 100,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "UINode",
+          "data": {
+            "position": 1,
+            "insetLeft": {
+              "unit": 0,
+              "value": 904
+            },
+            "insetTop": {
+              "unit": 0,
+              "value": 861
+            },
+            "width": {
+              "unit": 0,
+              "value": 5
+            },
+            "height": {
+              "unit": 0,
+              "value": 9
+            }
+          }
+        },
+        {
+          "type": "UIVisual",
+          "data": {
+            "visualType": 1,
+            "color": {
+              "r": 0.26,
+              "g": 0.88,
+              "b": 0.94,
+              "a": 1
+            },
+            "enabled": true
+          }
+        }
+      ]
+    },
+    {
+      "id": 137,
+      "name": "Status",
+      "parent": 100,
+      "children": [],
+      "visible": true,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "type": "UINode",
+          "data": {
+            "position": 1,
+            "insetLeft": {
+              "unit": 0,
+              "value": 1360
+            },
+            "insetTop": {
+              "unit": 0,
+              "value": 839
+            },
+            "width": {
+              "unit": 0,
+              "value": 203
+            },
+            "height": {
+              "unit": 0,
+              "value": 45
+            }
+          }
+        },
+        {
+          "type": "Text",
+          "data": {
+            "content": "READY · 01/21",
+            "fontSize": 15,
+            "fontFamily": "Arial, sans-serif",
+            "color": {
+              "r": 0.48,
+              "g": 0.87,
+              "b": 0.98,
+              "a": 1
+            },
+            "bold": true,
+            "align": 1,
+            "verticalAlign": 1,
+            "wordWrap": false
+          }
+        }
+      ]
+    }
+  ]
+}
