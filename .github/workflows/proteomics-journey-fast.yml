@@ -48,16 +48,16 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y xvfb libasound2t64 libgtk-3-0t64 libgbm1
 
-      - name: Verify packaged rendering, navigation and animation
-        run: node tools/tests/proteomics-journey-export.mjs --check-export output/proteomics-journey-web
-
       - name: Package a downloadable zip
         run: |
           cd output
           zip -qr proteomics-journey-web.zip proteomics-journey-web
 
-      - name: Upload tested web application
-        if: success()
+      - name: Verify packaged rendering, navigation and animation
+        run: node tools/tests/proteomics-journey-export-v2.mjs --check-export output/proteomics-journey-web
+
+      - name: Upload exported web application
+        if: always()
         uses: actions/upload-artifact@v7
         with:
           name: proteomics-journey-fast-web
