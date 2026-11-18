@@ -36,7 +36,7 @@ jobs:
         run: pnpm --filter ./sdk build
 
       - name: Type-check Proteomics Journey
-        run: pnpm exec tsc --noEmit -p examples/proteomics-journey/tsconfig.json
+        run: pnpm --filter @estella/pipeline exec tsc --noEmit -p ../examples/proteomics-journey/tsconfig.json
 
       - name: Validate scene and chapter schema
         run: node tools/tests/proteomics-journey-export.mjs --check-source
