@@ -1,0 +1,79 @@
+name: Proteomics Journey - Fast compatible-runtime export
+
+on:
+  push:
+    branches:
+      - feature/proteomics-journey-estella-20261118
+    paths:
+      - '.github/workflows/proteomics-journey-fast.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  fast-web-export:
+    name: Package and verify with a proven upstream Estella runtime
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v7
+      - uses: ./.github/actions/setup
+      - name: Build matching SDK and check the example
+        run: |
+          pnpm --filter ./sdk build
+          pnpm --filter @estella/pipeline exec tsc --noEmit -p ../examples/proteomics-journey/tsconfig.json
+          node tools/tests/proteomics-journey-export.mjs --check-source
+
+      - name: Download upstream successfully compiled Web runtime
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p build/wasm/web
+          gh run download 44265692529 --repo esengine/estella --name wasm-web --dir build/wasm/web
+          test "$(find build/wasm/web -type f | wc -l)" -gt 0
+
+      - name: Record exact binary provenance
+        run: |
+          mkdir -p output
+          node -e "const fs=require('fs');fs.writeFileSync('output/proteomics-runtime-provenance.json',JSON.stringify({sourceRepository:'esengine/estella',sourceRun:44265692529,sourceCommit:'c06c1cf06eb8041624ab8f92f7484a1a35527ddc',localSdkCommit:process.env.GITHUB_SHA,compatibleOnlyAfterBrowserVerification:true},null,2))"
+
+      - name: Export packaged web project
+        run: |
+          node pipeline/bin/estella.mjs export examples/proteomics-journey --platform web --wasm build/wasm/web --out output/proteomics-journey-web --json output/proteomics-export-result.json
+          test -f output/proteomics-journey-web/index.html
+
+      - name: Install headless render dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y xvfb libasound2t64 libgtk-3-0t64 libgbm1
+
+      - name: Verify packaged rendering, navigation and animation
+        run: node tools/tests/proteomics-journey-export.mjs --check-export output/proteomics-journey-web
+
+      - name: Package a downloadable zip
+        run: |
+          cd output
+          zip -qr proteomics-journey-web.zip proteomics-journey-web
+
+      - name: Upload tested web application
+        if: success()
+        uses: actions/upload-artifact@v7
+        with:
+          name: proteomics-journey-fast-web
+          path: output/proteomics-journey-web/
+          retention-days: 14
+          if-no-files-found: error
+
+      - name: Upload delivery archive and evidence
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: proteomics-journey-fast-evidence
+          path: |
+            output/*.json
+            output/*.log
+            output/*.png
+            output/proteomics-journey-web.zip
+          retention-days: 14
+          if-no-files-found: warn
