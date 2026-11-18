@@ -53,6 +53,14 @@ jobs:
           cd output
           zip -qr proteomics-journey-web.zip proteomics-journey-web
 
+      - name: Upload distributable ZIP independently of GPU checks
+        uses: actions/upload-artifact@v7
+        with:
+          name: proteomics-journey-web-package
+          path: output/proteomics-journey-web.zip
+          retention-days: 14
+          if-no-files-found: error
+
       - name: Verify packaged rendering, navigation and animation
         run: node tools/tests/proteomics-journey-export-v2.mjs --check-export output/proteomics-journey-web
 
